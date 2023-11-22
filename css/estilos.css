@@ -1,0 +1,245 @@
+/*Css general de elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font: 200 14px 'Poppins', sans-serif;
+    background-color: #222; 
+    color: white;
+}
+h2{
+    font-size: 36px;
+    line-height: 36px;
+}
+h3{
+    font-size: 18px;
+    font-weight: 300;
+    color: #999;
+}
+nav{
+    width: 100%;
+    height: 35px;
+    background-color: #222;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    text-align: center;
+    position: fixed;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li{
+    padding-top: 5px;
+}
+section{
+    padding: 10px 100px 10px 100px;
+}
+footer{
+    height: 55px;
+    padding-top: 10px;
+    text-align: center;
+}
+footer ul{
+    display: inline-block;
+}
+footer ul li{
+    float: left;
+}
+cite{
+    font-weight: 300;
+}
+p{
+    text-align: justify;
+}
+i{
+    font-size: 24px;
+}
+i:hover{
+    color: #ffc900;
+}
+ul{
+    list-style: none;
+}
+li{
+    float: left;
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+}
+a:any-link{
+    color: white;
+}
+a:-webkit-any-link{
+    color: white;
+}
+a:-moz-any-link{
+    color: white;
+}
+a:hover{
+    color: #ffc900;
+}
+button{
+    border-radius: 10px;
+}
+/*CSS IDs y clase*/
+.hastag{ 
+    color: #ffc900;
+}
+.Masinfo button{
+    background-color: #ffc900;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.center{
+    text-align: center;
+}
+.Card{
+    width: 250px;
+    background-color: #191919;
+    border-radius: 15px;
+}
+.Card img, .Card video, .Card iframe{
+    border-radius: 15px 15px 0 0;
+}
+.Card h3{
+    color: #ffc900;
+}
+.Card h4{
+    margin: 0px 5px 5px 0px;
+}
+.Card h3,.Card h4,.Card p,.Card .Masinfo{
+    padding: 0px 15px;
+}
+.Card .Masinfo{
+    margin: 15px 0px 15px 0px;
+    height: 26px
+}
+.Card .sep{
+    margin: 0px 5px 5px 0px;
+    border: 1px solid #ffc900;
+}
+.Card .Masinfo button{
+    float: right;
+}
+/*grid sobre mi*/
+#Sobre-mi{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+#Sobre-mi h2{
+    margin-bottom: 15px;
+}
+#Sobre-mi .Masinfo{
+    margin-top: 15px;
+}
+#Sobre-mi .Masinfo button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/*card portfolio*/
+.Filaportafolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#Inicio{
+    padding-top: 50px;
+    background-image: url("../image/anirudh-w_WZRYHb-D0-unsplash.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 280px;
+}
+#Portfolio{
+    border-top: 1px solid #ffc900;
+}
+#Experiencia{
+    background-color: white; 
+    color: #222;
+}
+#Redes{
+    margin-top: 20px;
+}
+#Contactar{
+    background-color: #ff9900;
+    color: #191919;
+}
+/*Card experiencia*/
+.gridexp{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-content: space-around;
+}
+@media (min-with: 400px) {
+    .gridexp{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 30px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+.cardexp{
+    background-color: #222;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+}
+.cardexp h2{
+    margin-bottom: 5px;
+}
+.cardexp h3{
+    margin-bottom: 20px;
+}
+.cardexp p{
+    margin-bottom: 20px;
+}
+.cardexp ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.cardexp li{
+    height: 30px;
+}
+.cardexp i{
+    color: #b4b4b4;
+}
+.cardexp i:hover{
+    color: #ffc900;
+}
+/*Fornulario*/
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.itemform label{
+    font-weight: 700;
+}
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+input[type="submit"]{
+    background-color: #222;
+    border: 1px solid #222;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
